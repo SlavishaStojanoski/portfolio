@@ -1,0 +1,98 @@
+.socialContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* margin-top: 7%; */
+}
+
+.socialIcon {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 5px 25px #fff; */
+}
+
+.socialIcon li {
+  list-style: none;
+  /* padding: 50px; */
+  font-size: 3rem;
+}
+.socialIcon li a {
+  position: relative;
+  display: inline-block;
+  padding: 50px 50px;
+  color: #fff;
+  /* opacity: 0.25; */
+  /* transition: 0.5s; */
+  z-index: 1;
+  backdrop-filter: blur(15px);
+}
+.socialIcon li a .icon {
+  opacity: 0.25;
+  transition: 0.1s;
+}
+
+.socialIcon li a:hover .icon {
+  opacity: 1;
+  color: #fff;
+}
+
+/* Facebook style div */
+.facebook::before {
+  left: -170px;
+  background-color: #3b5998;
+}
+
+/* Insta style DIV */
+.insta::before {
+  left: -31px;
+  background-color: #f56040;
+}
+
+/* LinkedIn Stile DIV */
+.LI::before {
+  left: 110px;
+  background-color: #2867b2;
+}
+
+.socialMediaShadow {
+  position: absolute;
+  top: 0;
+  transition: 0.1s;
+}
+.socialMediaShadow::before {
+  top: 75px;
+  content: '';
+  position: absolute;
+  border-radius: 15px;
+  width: 50px;
+  height: 40px;
+  transform: translateY(-25%);
+  /* box-shadow: 0 0 2px #0fc, 0 0 15px #0fc, 0 0 15px #0fc, 0 0 15px #0fc; */
+}
+
+@media (max-width: 640px) {
+  .socialIcon li a {
+    padding: 0 12px;
+  }
+  .socialIcon li a .icon {
+    opacity: 1;
+    transition: 0.1s;
+  }
+  .facebook::before {
+    display: none;
+  }
+
+  /* Insta style DIV */
+  .insta::before {
+    display: none;
+  }
+
+  /* LinkedIn Stile DIV */
+  .LI::before {
+    display: none;
+  }
+}

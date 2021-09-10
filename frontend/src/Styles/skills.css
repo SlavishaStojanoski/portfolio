@@ -1,0 +1,162 @@
+.secSkills {
+  /* margin-top: 8%; */
+  display: flex;
+  flex-direction: row;
+  /* padding-right: 50px; */
+  justify-content: space-evenly;
+}
+
+.secSkills h2 {
+  color: azure;
+  font-family: 'Hina Mincho';
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.7rem;
+  /* padding: 15px; */
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+
+.edu {
+  color: azure;
+  float: left;
+}
+
+.faculty {
+  font-size: 2.5rem;
+}
+.edu ul li {
+  list-style-type: disclosure-closed;
+  cursor: pointer;
+}
+.edu li {
+  font-size: 1.2rem;
+}
+.edu ul a {
+  text-decoration: none;
+  color: #0fc;
+  /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0fc); */
+}
+.hoverLinks:hover {
+  -webkit-box-reflect: below -54px linear-gradient(transparent, #0fc);
+  padding-bottom: 25px;
+}
+
+.ttt {
+  /* background-color: azure; */
+  /* margin: 30px; */
+  /* margin-right: 60px; */
+}
+
+.ttt p {
+  padding: 10px;
+  /* margin: 10px; */
+  color: azure;
+  background-color: none;
+
+  -webkit-box-reflect: below -12px linear-gradient(transparent, #0002);
+  transition: 0.2s;
+  transition-delay: 0s;
+}
+
+.ttt p:hover {
+  /* font-size: 3rem; */
+  transition-delay: 0.1s;
+  color: azure;
+  box-shadow: 0 0 1px #0fc, 0 0 2px #0fc, 0 0 3px #0fc, 0 0 4px #0fc,
+    0 0 5px #0fc;
+  cursor: pointer;
+}
+
+.skillsFlex {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* CSS Efect for first link  */
+/* JUST TRY */
+.link {
+  height: 30px;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+}
+.mask {
+  position: relative;
+  padding: 0;
+  height: 20px;
+  overflow: hidden;
+}
+
+.link-container {
+  transition: transform 0.2s ease;
+}
+
+.title {
+  display: block;
+  font-size: 20px;
+  line-height: 20px;
+  transition: transform 0.4s ease;
+}
+
+.link-title1 {
+  transform-origin: right center;
+}
+
+.link-title2 {
+  transform-origin: left center;
+  transform: rotate(20deg);
+}
+.link:hover .link-container {
+  transform: translateY(-20px);
+}
+.link:hover .link-title1 {
+  transform: rotate(20deg);
+}
+
+.link:hover .link-title2 {
+  transform: rotate(0);
+}
+
+@media (max-width: 920px) {
+  /* .secSkills {
+    width: 50px;
+  } */
+  .secSkills h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.4rem;
+  }
+  .faculty {
+    font-size: 1.4rem;
+  }
+  .edu li {
+    font-size: 0.8rem;
+  }
+  .ttt p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .secSkills {
+    /* margin-top: 8%; */
+    display: block;
+    /* flex-direction: row;
+    justify-content: space-evenly; */
+  }
+  .secSkills h2 {
+    margin-top: 0px;
+    font-size: 1.1rem;
+    letter-spacing: 0.3rem;
+  }
+  .faculty {
+    font-size: 0.6rem;
+  }
+  .edu li {
+    font-size: 0.6rem;
+  }
+  .ttt p {
+    font-size: 0.7rem;
+  }
+}

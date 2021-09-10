@@ -1,0 +1,122 @@
+.pic1 {
+  position: relative;
+  top: 150px;
+  opacity: 0.14;
+  width: 190px;
+  float: right;
+}
+
+.aboutMe {
+  position: absolute;
+  font-family: 'Hina Mincho';
+  font-size: 1.2rem;
+  color: azure;
+  letter-spacing: 1.1px;
+}
+
+.showMore {
+  display: block;
+}
+
+.hideMore {
+  display: none;
+}
+
+.readMoreBtn {
+  position: relative;
+  top: 3px;
+  margin-left: 25px;
+  padding: 12px;
+  border: 2px solid #0fc;
+  /* border-radius: 50%; */
+  letter-spacing: 2px;
+  background-color: #000;
+  color: azure;
+  -webkit-box-reflect: below 2px linear-gradient(transparent, #0002);
+  transition: 0.7s;
+  transition-delay: 0s;
+}
+.readMoreBtn:hover {
+  transition-delay: 0.1s;
+  color: #000;
+  box-shadow: 0 0 5px #0fc, 0 0 10px #0fc, 0 0 20px #0fc, 0 0 40px #0fc,
+    0 0 60px #0fc;
+}
+.readMoreBtn span {
+  position: relative;
+  z-index: 999;
+}
+/* LEFT Side */
+.readMoreBtn::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #0fc;
+  box-shadow: 5px -8px 0 #0fc, 5px 8px 0 #0fc;
+  transition: width 0.1s, left 0.1s, height 0.1s, box-shadow 0.1s;
+  transition-delay: 0.1s, 0.1s, 0s, 0s;
+}
+.readMoreBtn:hover::before {
+  width: 50%;
+  height: 100%;
+  left: -2px;
+  box-shadow: 5px 0px 0 #0fc, 5px 0px 0 #0fc;
+  transition-delay: 0s, 0.1s, 0.1s, 0.1s;
+}
+/* RIGHT Side */
+.readMoreBtn::after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #0fc;
+  box-shadow: -5px -8px 0 #0fc, -5px 8px 0 #0fc;
+  transition: width 0.1s, left 0.1s, height 0.1s, box-shadow 0.1s;
+  transition-delay: 0.1s, 0.1s, 0s, 0s;
+}
+.readMoreBtn:hover::after {
+  width: 50%;
+  height: 100%;
+  right: -2px;
+  box-shadow: -5px 0px 0 #0fc, -5px 0px 0 #0fc;
+  transition-delay: 0s, 0.1s, 0.1s, 0.1s;
+}
+
+@media (max-width: 920px) {
+  .aboutMe {
+    font-size: 1.2rem;
+  }
+  .readMoreBtn {
+    top: 5px;
+    margin-left: 30px;
+    padding: 10px;
+    border: 1px solid #0fc;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 640px) {
+  .aboutMe {
+    font-size: 0.9rem;
+  }
+  .readMoreBtn {
+    top: 5px;
+    margin-left: 15px;
+    padding: 6px;
+    border: 1px solid #0fc;
+    font-size: 0.5rem;
+  }
+  .juniorHeader {
+    font-size: 0.9rem;
+  }
+  .container {
+    position: relative;
+    top: -100px;
+  }
+}

@@ -1,0 +1,49 @@
+.stickyBtn {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  z-index: 99999;
+  padding: 20px;
+  border-top-left-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  background: none;
+  color: azure;
+  font-size: 2rem;
+  -webkit-box-reflect: below 2px linear-gradient(transparent, #0002);
+  transition: 0.7s;
+  transition-delay: 0s;
+}
+.stickyBtn:hover {
+  font-size: 3rem;
+  transition-delay: 0.1s;
+  color: azure;
+  box-shadow: 0 0 5px #0fc, 0 0 10px #0fc, 0 0 20px #0fc, 0 0 40px #0fc,
+    0 0 60px #0fc;
+}
+
+.stickyBtn Link span {
+  position: relative;
+  z-index: 999;
+  color: azure;
+}
+
+.stickyBtnContainer {
+  margin-left: 30px;
+}
+
+@media (max-width: 920px) {
+  .stickyBtn {
+    font-size: 1rem;
+  }
+  .stickyBtn:hover {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 640px) {
+  .stickyBtn {
+    font-size: 0.5rem;
+  }
+  .stickyBtn:hover {
+    font-size: 0.7rem;
+  }
+}

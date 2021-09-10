@@ -1,0 +1,55 @@
+.headerContent {
+  text-align: -webkit-center;
+  /* margin-left: 260px; */
+  padding-top: 60px;
+  /* margin-bottom: 60px; */
+}
+.form {
+  text-align: -webkit-center;
+}
+
+.formSize {
+  width: 350px !important;
+}
+
+.contactContainer {
+  background-color: black;
+  height: 100vh;
+  color: azure;
+}
+.bottomContact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.addressInfo {
+  margin-top: 70px;
+  font-size: 1.3rem;
+}
+
+.addressInfo ul li {
+  list-style: none;
+}
+
+.msgOn {
+  display: block;
+  color: azure;
+}
+.msgOff {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .bottomContact {
+    display: block;
+    text-align: center;
+  }
+  .addressInfo {
+    margin-top: 10px;
+    font-size: 0.7rem;
+  }
+  .formSize {
+    width: 250px !important;
+  }
+}
