@@ -24,6 +24,7 @@ const Home = (props) => {
           >
             Slavisha Stojanoski
           </h1>
+          <h3>Resume</h3>
         </div>
 
         <ul className='nav__links'>
